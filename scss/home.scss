@@ -1,0 +1,245 @@
+@import "variabile.scss";
+
+:root {
+    --text-welcome: #907864;
+    --text-quote: rgb(7, 7, 7);
+    --text-quote2: rgba(128, 128, 128, .9);
+    --text-header: #fff;
+    --text-logo: #212529;
+    --text-logo: dimgrey;
+}
+
+header {
+    height: 166px;
+    width: 100%;
+    background-color: black;
+
+}
+
+.meniuL {
+    @extend .direction_element;
+    @include flex(display, row, space-around, center);
+    height: 100%;
+    list-style: none;
+
+    &_logo {
+        width: 300px;
+        height: 122px;
+        // border: 1px solid blueviolet;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &_left {
+        @extend .direction_element;
+        gap: 40px;
+
+        a {
+            text-decoration: none;
+            @include textStyle(13px, 400, #fff);
+            letter-spacing: 2.33px;
+        }
+
+        @include textStyle(13px, 400, #907864);
+        letter-spacing: 2.33px;
+
+        &_dropDown {
+            display: none;
+            position: absolute;
+            background-color: #000000;
+            padding: 20px 20px;
+
+            li {
+                a {
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    @include textStyle(13px, 400, #fff);
+                    letter-spacing: 2.33px;
+                }
+            }
+        }
+
+        li:hover .meniuL_left_dropDown {
+            display: block;
+        }
+
+    }
+
+    &_right {
+        @extend .direction_element;
+        gap: 40px;
+
+        a {
+            text-decoration: none;
+            @include textStyle(13px, 400, #fff);
+            letter-spacing: 2.33px;
+        }
+    }
+}
+
+.divImage {
+    width: 100%;
+    height: 668px;
+
+}
+
+.divImage2 {
+    position: relative;
+    width: 100%;
+    height: 676px;
+
+    &_hello {
+        position: absolute;
+        width: 315px;
+        height: 79px;
+        object-fit: cover;
+        top: 30%;
+        left: 70%;
+    }
+
+    &_text {
+        position: absolute;
+        height: 10px;
+        width: 349px;
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 300px;
+        top: 40%;
+        left: 70%;
+    }
+
+    &_xo {
+        position: absolute;
+        width: 141px;
+        height: 81px;
+        object-fit: cover;
+        top: 70%;
+        left: 75%;
+    }
+}
+
+.divImage3 {
+    width: 100%;
+    height: 647px;
+}
+
+.divServices {
+    width: 100%;
+    height: 419px;
+    @extend .direction_element;
+    @include flex(display, row, space-evenly, center);
+
+    img {
+        width: 315px;
+        height: 209px;
+        gap: 20px;
+
+    }
+}
+
+.divImage4 {
+    width: 100%;
+    height: 613px;
+}
+
+.divImage5 {
+    position: relative;
+    width: 100%;
+    height: 889px;
+
+    &_foto {
+        // width: 350px;
+        // height: 500px;
+        border: 2px solid black;
+        background: #fff;
+        // margin: auto;
+        padding: 15px 15px;
+
+    }
+
+    &_text,
+    &_foto {
+        width: 350px;
+        height: 500px;
+
+        button {
+            background-color: transparent;
+            border: 2px solid black;
+            padding: 13px 26px;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            margin-top: 30px;
+            margin-left: 80px;
+        }
+
+        h1 {
+            color: dimgrey;
+            font-size: 72px;
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        p {
+            color: rgba(128, 128, 128, .9);
+            font-size: 16px;
+            line-height: 1.6em;
+        }
+    }
+}
+
+.container {
+    position: absolute;
+    @extend .direction_element;
+    justify-content: center;
+    gap: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contact {
+    position: absolute;
+    @extend .direction_element;
+    justify-content: center;
+    width: 100%;
+    height: 525px;
+
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: fill
+    }
+
+    &_address {
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        // margin-top: 40px;
+        padding-top: 150px;
+        padding-left: 350px;
+
+        h3 {
+            color: #fff;
+            font-size: 18px;
+            font-family: ltc-bodoni-175;
+            font-weight: 400;
+            font-style: italic;
+            line-height: 1.4em;
+            letter-spacing: .05em;
+
+        }
+    }
+}
+.containerF{
+    width: 101%;
+    height: 299px;
+    background: #000000;
+    margin-top: 525px;
+}

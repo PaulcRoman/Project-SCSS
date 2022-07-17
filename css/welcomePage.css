@@ -1,0 +1,67 @@
+.direction_element, .mainDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mainDiv {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+}
+
+.mainDiv_left {
+  width: 50%;
+  height: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainDiv_left_desc {
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+}
+
+.mainDiv_left_btn {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 15px 35px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.mainDiv_left_btn a {
+  text-decoration: none;
+  color: aqua;
+}
+
+.mainDiv_right {
+  width: 50%;
+  height: 100%;
+}
+
+.mainDiv_right_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
